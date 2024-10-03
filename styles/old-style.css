@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    
+}
+.header__img--size{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: auto;
+    margin-top: auto;
+}
+
+
+
+
+.img-redes{ 
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.nav__img--size{
+    width: 200px;
+}
+
+
+
+.texto-nav {
+
+  position: relative; /* Necesario para posicionar el subrayado */
+  color: black; /* Color del texto */
+  overflow: hidden; /* Asegura que el subrayado no se desborde del contenedor */
+  transition: 0.5s ease;
+  
+}
+  
+.texto-nav:hover{
+    color: orange;
+}
+.header__ul{
+  padding-right: 80px;
+}
+
+
+.card__container{ 
+  
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.main__img {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    overflow-x: hidden;
+
+  }
+
+  .tarjetas__servicios{
+    object-fit: cover;
+    height: 100vh;
+  }
+
+
+
+  .contenedor-imagenes{
+
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto; /*no supe cambiar el estilo de la barra*/
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0px;
+  
+  
+    
+  }
+  
+  .contenedor-imagenes p{
+    text-align: center;
+    padding:10px;
+    border: solid;
+    border-radius: 10px;
+    text-justify: center;
+    width: auto;
+    
+    background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
+    margin-bottom: 25px;
+  
+  }
+  
+  .contenedor-imagenes p:hover{
+    border-color: orangered;
+    transition: 1s;
+    color: orangered;
+  }
+  
+  .contenedor-imagenes img{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    border: solid;
+    border-radius: 10px;
+    filter: brightness(50%);
+    transition: filter 0.3s ease;
+    overflow: auto;
+    margin-bottom: 15vh;
+  
+  }
+  
+  
+  .contenedor-imagenes img:hover{
+    filter:brightness(100%);
+    transition: 1s;
+  }
+  .cartel-flotante{
+    text-align: center;
+    padding:10px;
+    border: solid;
+    border-radius: 10px;
+    width: auto;
+    
+    background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
+    margin-bottom: 25px;
+  }
+  
+  .cartel-flotante:hover{
+    border-color: orangered;
+    transition: 1s;
+    color: orangered;
+  }
+  
+  a h2{
+    text-decoration:  none;
+    color: black;
+  }
+
+  .section__contacto{
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    justify-content: space-evenly;
+  }
+
+  .section__contacto :first-child{
+    /* background-color: red; */
+    align-self: center;
+  }
+ 
+  input{
+    border: solid !important;
+    border-style: double !important;
+  
+  }
+  
+  textarea{
+    border: solid !important;
+    border-style: double !important;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .section__contacto{
+        margin-top: 10vh;
+        display: flex;
+        /* background-color: orange; */
+        flex-direction: column;
+      }
+
+      .section__contacto div{
+        overflow: auto;
+        
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+
+}
+
+@media screen and (max-width: 480px){
+  .section__contacto{
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+  }
+
+
+
+  .section__contacto div{
+    overflow: auto;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+}
+

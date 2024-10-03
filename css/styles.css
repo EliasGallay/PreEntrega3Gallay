@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.body-index main .carousel-imagenes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.body-index main .carousel-imagenes h2 {
+  padding-bottom: 3rem;
+}
+.body-index main .carousel-imagenes .imagenes {
+  max-width: 80vw;
+  height: 500px;
+  object-fit: cover;
+}
+.body-index main .carousel-imagenes .carousel-item {
+  width: 80vw;
+}
+.body-index main .carousel-imagenes .carousel-inner {
+  width: 80vw;
+}
+.body-index main .carousel-imagenes .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+  height: 100px;
+}
+
+.header__img--size {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: auto;
+  margin-top: auto;
+}
+
+.img-redes {
+  width: 35px;
+  transition: transform 0.3s ease;
+}
+
+.nav__img--size {
+  width: 200px;
+}
+
+.texto-nav {
+  position: relative;
+  color: black;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.texto-nav:hover {
+  color: orange;
+}
+
+.header__ul {
+  padding-right: 80px;
+}
+
+.card__container {
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.main__img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.tarjetas__servicios {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.contenedor-imagenes {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  overflow: auto; /*no supe cambiar el estilo de la barra*/
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.contenedor-imagenes p {
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+  text-justify: center;
+  width: auto;
+  background-size: 400% 400%;
+  animation: cambiar 10s ease infinite;
+  margin-bottom: 25px;
+}
+.contenedor-imagenes img {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  border: solid;
+  border-radius: 10px;
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+  overflow: auto;
+  margin-bottom: 15vh;
+}
+
+.contenedor-imagenes p:hover {
+  border-color: orangered;
+  transition: 1s;
+  color: orangered;
+}
+
+.contenedor-imagenes img:hover {
+  filter: brightness(100%);
+  transition: 1s;
+}
+
+.cartel-flotante {
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+  width: auto;
+  background-size: 400% 400%;
+  animation: cambiar 10s ease infinite;
+  margin-bottom: 25px;
+}
+
+.cartel-flotante:hover {
+  border-color: orangered;
+  transition: 1s;
+  color: orangered;
+}
+
+a h2 {
+  text-decoration: none;
+  color: black;
+}
+
+.section__contacto {
+  margin-top: 10vh;
+  display: flex;
+  /* background-color: orange; */
+  justify-content: space-evenly;
+}
+.section__contacto :first-child {
+  align-self: center;
+}
+
+input {
+  border: solid !important;
+  border-style: double !important;
+}
+
+textarea {
+  border: solid !important;
+  border-style: double !important;
+}
+
+.body__acercanuestro main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/contacto/fondoing.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.body__acercanuestro main h1 {
+  color: orange;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.body__acercanuestro main h2 {
+  color: orange;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.body__acercanuestro main p {
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+}
+.body__acercanuestro main ol li {
+  color: white;
+  list-style-type: disc;
+}
+.body__acercanuestro main .fondo-contacto {
+  padding-bottom: 10vh;
+}
+.body__acercanuestro main .fondo-contacto label {
+  color: white;
+}
+
+.body-contacto main .ultima {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__contacto {
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+  }
+  .section__contacto div {
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__contacto {
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+  }
+  .section__contacto div {
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
