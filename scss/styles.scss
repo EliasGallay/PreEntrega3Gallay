@@ -1,8 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import 'header-footer';
+
+
 
 body{
     a{
@@ -10,6 +8,8 @@ body{
     }
 
 }
+
+
 .body-index{
     main{
         .carousel-imagenes{
@@ -54,39 +54,7 @@ body{
 
 
 
-.header__img--size{
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    width: auto;
-    margin-top: auto;
-}
 
-.img-redes{ 
-    width: 35px;
-    transition: transform 0.3s ease;
-}
-
-.nav__img--size{
-    width: 200px;
-}
-
-.texto-nav {
-
-  position: relative; 
-  color: black; 
-  overflow: hidden; 
-  transition: 0.5s ease;
-  
-}
-  
-.texto-nav:hover{
-    color: orange;
-}
-
-.header__ul{
-  padding-right: 80px;
-}
 
 .card__container{ 
   
