@@ -4,177 +4,102 @@
   box-sizing: border-box;
 }
 
-body a {
-  text-decoration: none;
-}
-
-.body-index main .carousel-imagenes {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10rem;
-  padding-top: 2rem;
-  flex-direction: column;
-  align-items: center;
-}
-.body-index main .carousel-imagenes h2 {
-  padding-bottom: 3rem;
-}
-.body-index main .carousel-imagenes .imagenes {
-  max-width: 80vw;
-  height: 500px;
-  object-fit: cover;
-}
-.body-index main .carousel-imagenes .carousel-item {
-  width: 80vw;
-}
-.body-index main .carousel-imagenes .carousel-inner {
-  width: 80vw;
-}
-.body-index main .carousel-imagenes .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  width: 100%;
-  left: 0%;
-  height: 100px;
-}
-
-.header__img--size {
+header .header__img--size {
   margin: 0;
   padding: 0;
   height: 50px;
   width: auto;
   margin-top: auto;
 }
-
-.img-redes {
+header .img-redes {
   width: 35px;
   transition: transform 0.3s ease;
 }
-
-.nav__img--size {
+header .nav__img--size {
   width: 200px;
 }
-
-.texto-nav {
+header .texto-nav {
   position: relative;
   color: black;
   overflow: hidden;
   transition: 0.5s ease;
+}
+header .header__ul {
+  padding-right: 80px;
 }
 
 .texto-nav:hover {
   color: orange;
 }
 
-.header__ul {
-  padding-right: 80px;
+.body-contacto {
+  background-image: url(../img/xoren/portada-2xoren.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
-
-.card__container {
-  justify-content: space-around;
-  width: 100vw;
-  flex-wrap: wrap;
-  overflow-y: auto;
+.body-contacto main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-.main__img {
-  width: 100vw;
-  height: auto;
-  object-fit: cover;
-  overflow-x: hidden;
+.body-contacto main h2 {
+  color: orange;
 }
-
-.tarjetas__servicios {
-  object-fit: cover;
-  height: 100vh;
-}
-
-.contenedor-imagenes {
-  height: auto;
+.body-contacto main .ultima {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 20rem;
   display: flex;
   justify-content: space-around;
-  overflow: auto; /*no supe cambiar el estilo de la barra*/
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 0px;
 }
-.contenedor-imagenes p {
-  text-align: center;
-  padding: 10px;
-  border: solid;
-  border-radius: 10px;
-  text-justify: center;
-  width: auto;
-  background-size: 400% 400%;
-  animation: cambiar 10s ease infinite;
-  margin-bottom: 25px;
-}
-.contenedor-imagenes img {
-  width: 350px;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  border: solid;
-  border-radius: 10px;
-  filter: brightness(50%);
-  transition: filter 0.3s ease;
-  overflow: auto;
-  margin-bottom: 15vh;
-}
-
-.contenedor-imagenes p:hover {
-  border-color: orangered;
-  transition: 1s;
-  color: orangered;
-}
-
-.contenedor-imagenes img:hover {
-  filter: brightness(100%);
-  transition: 1s;
-}
-
-.cartel-flotante {
-  text-align: center;
-  padding: 10px;
-  border: solid;
-  border-radius: 10px;
-  width: auto;
-  background-size: 400% 400%;
-  animation: cambiar 10s ease infinite;
-  margin-bottom: 25px;
-}
-
-.cartel-flotante:hover {
-  border-color: orangered;
-  transition: 1s;
-  color: orangered;
-}
-
-a h2 {
-  text-decoration: none;
-  color: black;
-}
-
-.section__contacto {
+.body-contacto main .section__contacto {
   margin-top: 10vh;
   display: flex;
   /* background-color: orange; */
   justify-content: space-evenly;
 }
-.section__contacto :first-child {
+.body-contacto main .section__contacto :first-child {
   align-self: center;
 }
-
-input {
+.body-contacto main .section__contacto input {
+  border: solid !important;
+  border-style: double !important;
+}
+.body-contacto main .section__contacto textarea {
   border: solid !important;
   border-style: double !important;
 }
 
-textarea {
-  border: solid !important;
-  border-style: double !important;
+@media screen and (max-width: 768px) {
+  .section__contacto {
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+  }
+  .section__contacto div {
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
-
+@media screen and (max-width: 480px) {
+  .section__contacto {
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+  }
+  .section__contacto div {
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .body__acercanuestro main {
   display: flex;
   flex-direction: column;
@@ -214,36 +139,173 @@ textarea {
   color: white;
 }
 
-.body-contacto main .ultima {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+a {
+  text-decoration: none;
+}
+
+.body-index main section h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+.body-index main .descripcion {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  flex-wrap: nowrap;
+  font-size: x-large;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.body-index main .textos-descripcion {
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50vw;
+  padding-top: 40px;
+}
+.body-index main .textos-descripcion p {
+  text-indent: 0;
+}
+.body-index main .descripcion-derecha {
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50vw;
+}
+.body-index main .imagen-descripcion {
+  width: 100%;
+}
+.body-index main .pie-de-img {
+  width: 100%;
+}
+.body-index main .main__img {
+  width: 100vw;
+  height: auto;
+  flex-wrap: wrap;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+.body-index main .carousel-imagenes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.body-index main .carousel-imagenes h2 {
+  padding-bottom: 3rem;
+}
+.body-index main .carousel-imagenes .imagenes {
+  max-width: 80vw;
+  height: 800px;
+  object-fit: cover;
+}
+.body-index main .carousel-imagenes .carousel-item {
+  width: 80vw;
+}
+.body-index main .carousel-imagenes .carousel-inner {
+  width: 80vw;
+}
+.body-index main .carousel-imagenes .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .section__contacto {
-    margin-top: 10vh;
+  main section h2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+  main .descripcion {
     display: flex;
-    /* background-color: orange; */
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
     flex-direction: column;
   }
-  .section__contacto div {
-    overflow: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+  main .textos-descripcion {
+    width: 100% !important;
+    padding-top: 0px !important;
+  }
+  main .textos-descripcion p {
+    width: 100vw !important;
+    text-indent: 0;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .descripcion-derecha {
+    width: 100vw !important;
+  }
+  main .imagen-descripcion {
+    width: 100vw !important;
+  }
+  main .pie-de-img {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100vw !important;
+  }
+  .imagen-procesos {
+    margin: 0;
+    padding: 0;
   }
 }
-@media screen and (max-width: 480px) {
-  .section__contacto {
-    margin-top: 10vh;
-    display: flex;
-    /* background-color: orange; */
-    flex-direction: column;
-  }
-  .section__contacto div {
-    overflow: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+.contenedor-imagenes {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.contenedor-imagenes p {
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+  text-justify: center;
+  width: auto;
+  background-size: 400% 400%;
+  animation: cambiar 10s ease infinite;
+  margin-bottom: 25px;
+}
+.contenedor-imagenes img {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  border: solid;
+  border-radius: 10px;
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+  overflow: auto;
+  margin-bottom: 15vh;
+}
+
+.contenedor-imagenes p:hover {
+  border-color: orangered;
+  transition: 1s;
+  color: orangered;
+}
+
+.contenedor-imagenes img:hover {
+  filter: brightness(100%);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */

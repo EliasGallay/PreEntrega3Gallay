@@ -1,0 +1,90 @@
+.body-contacto{
+    background-image: url(../img/xoren/portada-2xoren.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: white;
+    
+    main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            color: orange;
+        }
+        .ultima{
+            padding-bottom: 5rem;
+            padding-top:5rem;
+            width: 20rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .section__contacto{
+            margin-top: 10vh;
+            display: flex;
+            /* background-color: orange; */
+            justify-content: space-evenly;
+        
+            :first-child{
+                align-self: center;
+        
+            }
+
+            input{ 
+                border: solid !important;
+                border-style: double !important;
+            
+            }
+            
+            textarea{
+                border: solid !important;
+                border-style: double !important;
+            }
+        }
+
+    }
+}
+
+
+
+
+// formulario de contacto
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+.section__contacto{
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+    }
+
+    .section__contacto div{
+    overflow: auto;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+  .section__contacto{
+    margin-top: 10vh;
+    display: flex;
+    /* background-color: orange; */
+    flex-direction: column;
+
+    div{
+        overflow: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+}
