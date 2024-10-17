@@ -217,6 +217,24 @@ a {
   left: 0%;
   height: 100px;
 }
+.body-index main .contenedor-certificaciones {
+  display: flex;
+  width: 100vw;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+}
+.body-index main .contenedor-certificaciones div {
+  align-content: center;
+}
+.body-index main .contenedor-certificaciones div h2 {
+  text-align: center;
+  color: orange;
+}
+.body-index main .contenedor-certificaciones .imagen-certificaciones {
+  height: 100%;
+  width: 50%;
+}
 
 @media screen and (max-width: 768px) {
   main section h2 {

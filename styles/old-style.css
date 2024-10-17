@@ -16,9 +16,6 @@ a{
     margin-top: auto;
 }
 
-
-
-
 .img-redes{ 
     width: 35px;
     transition: transform 0.3s ease;
@@ -27,7 +24,6 @@ a{
 .nav__img--size{
     width: 200px;
 }
-
 
 
 .texto-nav {
