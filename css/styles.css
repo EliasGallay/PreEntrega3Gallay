@@ -203,7 +203,8 @@ a {
 }
 .body-index main .carousel-imagenes .imagenes {
   max-width: 80vw;
-  height: 500px;
+  min-height: 500px;
+  max-height: 800px;
   object-fit: cover;
 }
 .body-index main .carousel-imagenes .carousel-item {
