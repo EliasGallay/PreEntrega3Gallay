@@ -147,10 +147,45 @@ a {
   margin-top: 4rem;
   margin-bottom: 1rem;
   font-size: 4rem;
+  color: orange;
+}
+.body-index main section h1 {
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+}
+.body-index main article {
+  text-align: center;
+  padding-top: 50px;
+  color: orange;
+}
+.body-index main .contenedor-tarjetas {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 100px;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.body-index main .contenedor-tarjetas .tarjeta {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3ease;
+  border-style: none;
+}
+.body-index main .image-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  max-height: 800px;
 }
 .body-index main .main__img {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
+  max-height: 800px;
   flex-wrap: auto;
   object-fit: cover;
   overflow-x: hidden;
@@ -168,7 +203,7 @@ a {
 }
 .body-index main .carousel-imagenes .imagenes {
   max-width: 80vw;
-  height: 800px;
+  height: 500px;
   object-fit: cover;
 }
 .body-index main .carousel-imagenes .carousel-item {
