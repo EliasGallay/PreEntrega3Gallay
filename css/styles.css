@@ -56,22 +56,9 @@ header .header__ul {
   display: flex;
   justify-content: space-around;
 }
-.body-contacto main .section__contacto {
-  margin-top: 10vh;
-  display: flex;
-  /* background-color: orange; */
-  justify-content: space-evenly;
-}
-.body-contacto main .section__contacto :first-child {
-  align-self: center;
-}
-.body-contacto main .section__contacto input {
-  border: solid !important;
-  border-style: double !important;
-}
-.body-contacto main .section__contacto textarea {
-  border: solid !important;
-  border-style: double !important;
+
+label {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,6 +126,78 @@ header .header__ul {
   color: white;
 }
 
+.contenedor-pagina-servicios {
+  max-width: 100%;
+  padding-top: 20px;
+  background-image: url(../img/servicios/fondo.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.contenedor-tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1200px;
+}
+.contenedor-tarjetas-servicios .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.contenedor-tarjetas-servicios .card img {
+  width: 60%;
+}
+.contenedor-tarjetas-servicios .card:hover {
+  transform: scale(1.05);
+}
+.contenedor-tarjetas-servicios .card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenedor-tarjetas-servicios .card .card-body p {
+  flex-grow: 1;
+}
+.contenedor-tarjetas-servicios .card .card-body a {
+  margin-top: auto;
+}
+@media (max-width: 768px) {
+  .contenedor-tarjetas-servicios .contenedor-tarjetas {
+    justify-content: center;
+  }
+  .contenedor-tarjetas-servicios .contenedor-tarjetas .card {
+    width: 45%;
+    justify-content: center;
+  }
+  .contenedor-tarjetas-servicios .contenedor-tarjetas .card .card-body {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-tarjetas-servicios .contenedor-tarjetas {
+    justify-content: center;
+  }
+  .contenedor-tarjetas-servicios .contenedor-tarjetas .card {
+    width: 100%;
+    justify-content: center;
+  }
+  .contenedor-tarjetas-servicios .contenedor-tarjetas .card .card-body {
+    justify-content: center;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -203,8 +262,7 @@ a {
 }
 .body-index main .carousel-imagenes .imagenes {
   max-width: 80vw;
-  min-height: 500px;
-  max-height: 800px;
+  height: 80vh;
   object-fit: cover;
 }
 .body-index main .carousel-imagenes .carousel-item {
@@ -219,6 +277,11 @@ a {
   width: 100%;
   left: 0%;
   min-height: 100px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .contenedor-imagenes {

@@ -20,34 +20,16 @@
             width: 20rem;
             display: flex;
             justify-content: space-around;
-        }
-        .section__contacto{
-            margin-top: 10vh;
-            display: flex;
-            /* background-color: orange; */
-            justify-content: space-evenly;
         
-            :first-child{
-                align-self: center;
         
-            }
-
-            input{ 
-                border: solid !important;
-                border-style: double !important;
-            
-            }
-            
-            textarea{
-                border: solid !important;
-                border-style: double !important;
-            }
         }
 
     }
 }
 
-
+label{
+    color: white;
+}
 
 
 // formulario de contacto

@@ -1,6 +1,7 @@
 @import 'header';
 @import 'contacto';
 @import 'acerca-nuestro';
+@import 'servicios';
 
 
 a{
@@ -77,8 +78,7 @@ a{
 
            .imagenes{
                 max-width: 80vw;  
-                min-height: 500px;
-                max-height: 800px;
+                height: 80vh;
                 object-fit: cover;
                 
              }
@@ -105,6 +105,10 @@ a{
     }
 
 
+.tarjeta:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
 
 // contenedor de imagmenes de servicios
